@@ -1,5 +1,5 @@
 export interface SimpleOptions {
-  portal?: string;
-  token?: string;
-  webmapId?: string;
+  portal_edit?: string;
+  token_edit?: string;
+  webmapId_edit?: string;
 }

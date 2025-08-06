@@ -1,23 +1,23 @@
 import { PanelPlugin } from '@grafana/data';
-// import { SimpleOptions } from './types';
+import { SimpleOptions } from './types';
 import { PageMap } from './Panel';
 
-export const plugin = new PanelPlugin(PageMap).setPanelOptions((builder) => {
+export const plugin = new PanelPlugin<SimpleOptions>(PageMap).setPanelOptions((builder) => {
   return builder
     .addTextInput({
-      path: 'portal',
+      path: 'portal_edit',
       name: 'Portal URL',
       description: 'portal url',
       defaultValue: '',
     })
     .addTextInput({
-      path: 'token',
+      path: 'token_edit',
       name: 'Token',
       description: 'token',
       defaultValue: '',
     })
     .addTextInput({
-      path: 'webmapId',
+      path: 'webmapId_edit',
       name: 'ArcGIS WebMap ID',
       description: 'item id',
       defaultValue: '',
