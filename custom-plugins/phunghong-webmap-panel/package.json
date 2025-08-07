@@ -72,10 +72,19 @@
     "@grafana/data": "^12.1.0",
     "@grafana/runtime": "^12.0.2",
     "@grafana/schema": "^12.0.2",
-    "@grafana/ui": "^12.0.2",
+    "@grafana/ui": "^12.1.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "http-proxy-middleware": "^3.0.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^5.5.0"
   },
-  "packageManager": "npm@10.9.2"
+  "packageManager": "npm@10.9.2",
+  "description": "This template is a starting point for building a panel plugin for Grafana.",
+  "main": ".prettierrc.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": []
 }
